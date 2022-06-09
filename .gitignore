@@ -1,4 +1,4 @@
-/universe/settings.py
+/universe/universe/settings.py
 /venv
 # Byte-compiled / optimized / DLL files
 __pycache__/
