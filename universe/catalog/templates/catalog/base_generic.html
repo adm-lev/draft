@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block title %}<title>Local library</title>{% endblock title %}
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<div class="container">
+
+  {% block sidebar %}
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#">Books</a></li>
+      </ul>
+  {% endblock sidebar %}
+  <div>
+  {% block content %}
+  {% endblock content %}
+  </div>
+</div>
+</body>
+</html>

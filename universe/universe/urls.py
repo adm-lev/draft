@@ -3,6 +3,10 @@ from django.urls import path, include
 import re
 
 urlpatterns = [
-    path('', include('polls.urls')),
+    path('', include('catalog.urls')),
     path('admin/', admin.site.urls),
+]
+
+urlpatterns += [
+    path('catalog/', include('catalog.urls')),
 ]
