@@ -1,6 +1,12 @@
 from django.shortcuts import get_object_or_404, render
 from django.views import generic
 from .models import Book, Author, Genre
+from django.contrib.auth.decorators import login_required
+
+
+@login_required()
+def test(request):
+    return render(request, 'catalog/test.html')
 
 
 def index(request):
