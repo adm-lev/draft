@@ -1,0 +1,10 @@
+{% extends 'catalog/base_generic.html' %}
+
+{% block content %}
+<h1>Title: {{ author.last_name }}</h1>
+
+<p>Name: {{ author.first_name }} {{ author.last_name }}</p>
+<p>Biography: {{ author.biography }}</p>
+
+
+{% endblock content %}

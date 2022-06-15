@@ -1,16 +1,18 @@
 {% extends 'catalog/base_generic.html' %}
 
 {% block content %}
-<h1>Local library Home</h1>
+<h1>Домашнаяя библиотека</h1>
 
-<p>Welcome to <em>LocalLibrary</em>, a very basic Django website</p>
+<p>Это моя личная бибилиотека, в которую я сохраняю прочтенные книги.
+    Эти книги доступны для ознакомительного просмотра, однако загружать их не разрешается,
+в виду отсутствия договоренности с авторами.</p>
 
-<h2>Dynamic content</h2>
+<h2>Динамический контент</h2>
 
-<p>The library has the following record counts: </p>
+<p>Библиотека содержит: </p>
 <ul>
-    <li><strong>Books: </strong>{{ num_books }}</li>
-    <li><strong>Authors: </strong>{{ num_authors }}</li>
-    <li><strong>Visits: </strong>{{ num_visits }}</li>
+    <li><strong>Книг: </strong>{{ num_books }}</li>
+    <li><strong>Авторов: </strong>{{ num_authors }}</li>
+    <li><strong>Посещений: </strong>{{ num_visits }}</li>
 </ul>
 {% endblock content %}
